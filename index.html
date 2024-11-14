@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumnos</title>
+</head>
+<body>
+    <h1>Registro de Alumnos</h1>
+    <form action="insert.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        <br>
+        <label for="carnet">Carnet:</label>
+        <input type="text" id="carnet" name="carnet" required>
+        <br>
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso" required>
+            <option value="Virtualizacion">Virtualizacion</option>
+            <option value="Ing. Software">Ing. Software</option>
+            <option value="Ing. economica">Ing. economica</option>
+            <option value="Tecnologias emergentes">Tecnologias emergentes</option>
+        </select>
+        <br>
+        <label for="nota">Nota:</label>
+        <input type="number" id="nota" name="nota" min="0" max="100" required>
+
+        <button type="submit">Registrar Alumno</button><br>
+    </form>
+    <form action="lista_alumnos.php" method="POST">
+        <button type="submit">Listar alumnos</button><br>
+    </form>
+</body>
+</html>
